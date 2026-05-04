@@ -1,115 +1,191 @@
 # AI Tools Knowledge Graph
 
-> A knowledge graph of AI tools, agents, and resources sourced from Instagram DMs — visualizing connections between tools, creators, and categories.
+> A comprehensive, structured knowledge graph of **AI tools, methodologies, and architectural patterns** for the Claude Code ecosystem and agentic AI development.
 
-![Knowledge Graph Banner](https://img.shields.io/badge/AI-Knowledge%20Graph-blue)
-![Data Source](https://img.shields.io/badge/Source-Instagram%20DMs-green)
-![Created](https://img.shields.io/badge/Created-2026--05--02-orange)
-![Nodes](https://img.shields.io/badge/Nodes-19--Tools,%2010--People-purple)
-![Edges](https://img.shields.io/badge/Edges-45--Relationships-red)
+[![Knowledge Graph](https://img.shields.io/badge/Knowledge%20Graph-AI%20Tools-blue?style=for-the-badge)](INDEX.md)
+[![Tools](https://img.shields.io/badge/Tools-19-brightgreen?style=for-the-badge)](data/knowledge-graph.json)
+[![Relationships](https://img.shields.io/badge/Relationships-45+-orange?style=for-the-badge)](data/knowledge-graph.json)
+[![Updated](https://img.shields.io/badge/Updated-2025--01--18-brightgreen?style=for-the-badge)]()
+
+## Quick Start
+
+**For AI Agents:**  
+➦ Start with [**INDEX.md**](INDEX.md) for rapid tool discovery  
+➦ See [**MAINTENANCE.md**](MAINTENANCE.md) for update procedures  
+➦ Reference [**data/knowledge-graph.json**](data/knowledge-graph.json) for complete relationships
+
+**For Developers:**  
+➦ Browse tools by category below  
+➦ Explore the interactive visualization  
+➦ Check individual tool documentation
 
 ---
 
 ## Overview
 
-This repository contains a structured knowledge graph of AI tools, multi-agent orchestration platforms, Claude Code ecosystem resources, and related tools — all discovered through Instagram Direct Messages. Each tool is mapped with its relationships to other tools, creators, and categories.
+This repository contains a **curated knowledge graph** of:
 
-**Source:** Instagram Direct Messages Inbox (scraped from DM conversations)
-**Format:** JSON (data), Markdown (visualizations)
-**Visualization:** Mermaid diagrams rendered natively on GitHub
+- **19 AI Tools** - Development environments, orchestration frameworks, debugging tools
+- **8 Methodologies** - Patterns, best practices, and architectural approaches  
+- **45+ Relationships** - How tools work together, when to use them, and what they enable
 
----
-
-## Knowledge Graph
-
-### Entity Types
-
-| Type | Count | Description |
-|------|-------|-------------|
-| **Tools** | 19 | AI tools, GitHub repos, guides, and resources |
-| **People** | 10 | Creators, curators, and contributors who shared the tools |
-| **Categories** | 8 | Classification buckets (Claude Code, Orchestration, Debugging, etc.) |
-
-### Relationship Types
-
-| Relation | Meaning |
-|----------|--------|
-| `references` | Tool references another tool |
-| `extends` | Tool extends/adds functionality to another |
-| `teaches` | Resource teaches about a tool |
-| `runs_on` | Tool runs on top of another |
-| `integrates_with` | Tool integrates with another |
-| `alternatives` | Tools are alternatives to each other |
-| `shared` | Person shared the tool in their DM |
-| `created` | Person/organization created the tool |
-| `recommends` | Person recommends the tool |
-| `belongs_to` | Tool belongs to a category |
-| `focuses_on` | Person focuses on a category |
+**Focus:** Tools, techniques, and patterns for Claude Code and agentic AI development  
+**Source:** Direct tool repositories, official documentation, and architectural analysis
 
 ---
 
-## Graph Statistics
+## Core Tools (Quick Reference)
 
-- **Total Nodes:** 29 (19 tools + 10 people)
-- **Total Edges:** 45 relationships
-- **Categories:** 8 (Claude Code, Orchestration, Debugging, Prompts, Guides, Marketing, Automation, Personal Branding)
-- **Most Connected Node:** Claude Code (hub of 12+ dependencies)
-- **Top Sharer:** Carter Perez (shared 10 Claude Code ecosystem tools)
+### 🔨 Essential (Tier: Core)
 
----
+| Tool | Purpose | Learn More |
+|------|---------|------------|
+| **Claude Code** | IDE for agentic coding with plan mode & multi-agent support | [INDEX.md](INDEX.md#claude-code) |
+| **Ruflo** | CLI workflow orchestration framework | [INDEX.md](INDEX.md#ruflo-claude-flow) |
+| **GSD** | Multi-agent orchestration & task decomposition | [INDEX.md](INDEX.md#gsd-get-shit-done) |
+| **Claude Subagents** | Architectural pattern for agent delegation | [INDEX.md](INDEX.md) |
+| **Plan Mode** | Essential Claude Code execution pattern | [INDEX.md](INDEX.md) |
 
-## Tools by Category
+### 🚀 Advanced (Tier: Advanced)
 
-### 1. Claude Code Ecosystem (10 tools)
-- **Claude Code** — Anthropic's official agentic coding tool
-- **Everything Claude Code** — Comprehensive resource collection
-- **Awesome Claude Code** — Curated tools and resources
-- **Claude Code Ultimate Guide** — In-depth guide
-- **Get Shit Done** — Productivity templates
-- **100+ Claude Subagents** — Specialized subagents by VoltAgent
-- **Claude Code Templates** — Reusable templates
-- **Claude Skills** — Skills and workflows collection
-- **Awesome Claude Code Toolkit** — Comprehensive toolkit
-- **Learn Claude Code** — Learning resources
+| Tool | Purpose |
+|------|----------|
+| GSD Build | Build automation within GSD ecosystem |
+| VoltAgent | Multi-agent framework extending Claude Code |
+| Awesome Claude Toolkit | MCP integrations & extensions |
+| Everything Claude Code | 10+ repositories of advanced patterns |
 
-### 2. AI Agent Orchestration (2 tools)
-- **Ruflo (formerly Claude Flow)** — 60-100+ agent multi-agent platform by Reuven Cohen (~30K GitHub stars)
-- **Paperclip** — Company-like AI agent orchestration with org charts and governance
+### 🪩 Specialized (Tier: Intermediate)
 
-### 3. LLM Debugging & Testing (1 tool)
-- **Talc AI** — LLM session replay and debugging platform
-
-### 4. AI Prompt Collections (1 resource)
-- **ChatGPT Shared Prompts** — Curated prompt collection
-
-### 5. AI Guides & Resources (1 guide)
-- **Perplexity Mastery Guide** — Guide by God Of Prompt
-
-### 6. AI Marketing (1 resource)
-- **AI Marketing Templates** — Templates by Farhan Rakhangi
-
-### 7. Automation & Business (1 tool)
-- **Brody Automates** — Automation and business diagnostics
-
-### 8. AI for Personal Branding
-- **RuFlow Setup Guide** — Duncan Rogoff's guide for running AI agents
+| Tool | Purpose |
+|------|----------|
+| Talc AI | Debugging & error analysis for Claude Code |
+| Paperclip | Alternative workflow architecture to Ruflo |
+| Claude Code Templates | Pre-built project templates |
+| Claude Loom Templates | Prompt templates & patterns |
 
 ---
 
-## People / Creators
+## Core Methodologies
 
-| Name | Handle | Platform | Role |
-|------|--------|----------|------|
-| Carter Perez | certsgamified | Instagram | AI Tools Curator |
-| Duncan Rogoff | duncan_rogoff | Instagram | AI for Personal Brands |
-| Farhan Rakhangi | farhannrakhangi | Instagram | AI Agents & Marketing |
-| Taki Wong | taki.gpt | Instagram | AI Builder |
-| Anil Lobo | talc.ai | Instagram | AI Tool Creator |
-| Sanskar Prajapati | aiadventureryt | Instagram | AI Educator |
-| God Of Prompt | godofprompt | Instagram | AI Workflow Creator |
-| Death of PC | death.of.pc | Instagram | AI Prompt Creator |
-| Reuven Cohen | @ruvnet | GitHub | Creator of Ruflo/Claude Flow |
-| Anthropic | anthropics | GitHub | Claude Code Creator |
+### Execution Patterns
+
+1. **Plan Mode**
+   - Essential Claude Code feature for task decomposition
+   - Workflow: Analyze → Plan → Execute → Validate
+   - **Best Practice:** Use for tasks with >3 steps
+
+2. **Subagent Delegation**
+   - Break complex tasks into specialized agents
+   - Optimal count: 2-4 focused subagents per task
+   - **Benefit:** Parallelization & error isolation
+
+3. **Context Management**
+   - Reserve 20% of context for execution
+   - Techniques: Progressive disclosure, summarization, token budgeting
+   - **Benefit:** Extended workflow capability
+
+### Integration & Extension
+
+4. **MCP Integration**
+   - Extend Claude Code with external tools via Model Context Protocol
+   - Common servers: Notion, GitHub, Slack, Web scraping
+   - Configuration: `.claude/mcp.json` per project
+
+5. **Hook Automation**
+   - Scripts triggered on file edits, commits, deployments
+   - Use cases: Auto-linting, test execution, documentation updates
+
+### Development Practices
+
+6. **Test-Driven Development**
+   - RED-GREEN-REFACTOR cycle
+   - Never write untested code
+   - **Benefit:** Confidence through changes
+
+---
+
+## Tool Categories
+
+### Claude Code Ecosystem
+Tools directly extending or enhancing Claude Code IDE
+- Claude Code, Everything Claude Code, Awesome Claude Code, Claude Code Ultimate Guide
+
+### AI Agent Orchestration
+Frameworks for managing multi-agent workflows
+- GSD, VoltAgent
+
+### Automation & Business
+Workflow automation and business tool integration
+- Ruflo, Paperclip, GSD Build, Hook Automation patterns
+
+### LLM Debugging & Testing
+Tools for testing and validating AI agent behavior
+- Talc AI, Test-Driven Development methodology
+
+### AI Frameworks & Patterns
+Core architectural patterns and methodologies
+- Plan Mode, Subagent Delegation, Context Management, MCP Integration
+
+### Guides & Resources
+Educational content and learning materials
+- Claude Code Ultimate Guide, Learn Claude Code, Awesome Claude Skills
+
+---
+
+## Knowledge Graph Structure
+
+### Data Format
+
+**JSON** (`data/knowledge-graph.json`):
+- `metadata`: Repository information & versioning
+- `categories`: Tool classification (8 categories)
+- `nodes`: 19 tools + 8 methodologies + 3 resources (30 total)
+- `edges`: 45+ weighted relationship mappings
+
+### Visualization
+
+Mermaid diagrams rendered in `data/visualizations/` showing:
+- Tool dependency relationships
+- Integration patterns
+- Methodology implementations
+
+---
+
+## Key Features
+
+✅ **Tool-Focused**: Exclusively tools, methodologies, and patterns (no people/Instagram data)  
+✅ **Structured Data**: JSON format with complete relationships and weights  
+✅ **AI Agent Ready**: Designed for programmatic access and automated discovery  
+✅ **Quick Reference**: INDEX.md for rapid lookups  
+✅ **Maintenance Guide**: MAINTENANCE.md with procedures for AI agents  
+✅ **Relationship Mapping**: Understand how tools work together  
+✅ **Tiered Classification**: core → advanced → intermediate → reference  
+
+---
+
+## How to Use This Repository
+
+### For AI Agents
+
+1. Start with [INDEX.md](INDEX.md) for rapid tool discovery
+2. Query [data/knowledge-graph.json](data/knowledge-graph.json) for complete relationships
+3. Follow [MAINTENANCE.md](MAINTENANCE.md) to update the knowledge graph
+4. Validate changes using JSON schema
+
+### For Developers
+
+1. Browse tools by category in the table above
+2. Reference INDEX.md for quick answers
+3. Read individual tool documentation (coming soon)
+4. Study methodologies for best practices
+
+### For Researchers
+
+1. Analyze tool relationships in knowledge-graph.json
+2. Study methodology implementations
+3. Review tier classifications
+4. Export for network analysis
 
 ---
 
@@ -117,111 +193,133 @@ This repository contains a structured knowledge graph of AI tools, multi-agent o
 
 ```
 ai-tools-knowledge-graph/
-├── README.md                          # This file
+├── INDEX.md                    ✗ AI Agent Quick Reference
+├── MAINTENANCE.md              ✗ Repository Maintenance Guide
+├── README.md                  ✗ This file
 ├── data/
-│   ├── knowledge-graph.json           # Structured JSON data (nodes, edges, people, categories)
-│   └── visualizations/
-│       └── knowledge-graph-mermaid.md # Mermaid diagram visualizations
-└── ...
+│   ├── knowledge-graph.json     ✗ Core data (JSON format)
+│   └── visualizations/          ✗ Mermaid diagrams
+├── docs/
+│   ├── tools/                   ✗ Individual tool documentation
+│   ├── methodologies/           ✗ Pattern & methodology guides
+│   └── examples/                ✗ Usage examples
+└── scripts/                    ✗ Maintenance automation scripts
 ```
 
 ---
 
-## Usage
+## Statistics
 
-### Load the Data
-
-```javascript
-// In Node.js
-const data = require('./data/knowledge-graph.json');
-
-console.log(data.nodes.length + ' tools found');
-console.log(data.edges.length + ' relationships found');
-
-// Find all Claude Code ecosystem tools
-const claudeTools = data.nodes.filter(n => n.category === 'cat_claude_code');
-
-// Find all tools shared by Carter
-const carterTools = data.edges
-  .filter(e => e.source === 'person_carter' && e.relation === 'shared')
-  .map(e => data.nodes.find(n => n.id === e.target));
-```
-
-### Query with the Graph
-
-```python
-# In Python
-import json
-
-with open('data/knowledge-graph.json') as f:
-    data = json.load(f)
-
-# Find all tools that run_on Claude Code
-running_on_claude = [
-    e for e in data['edges']
-    if e['relation'] == 'runs_on' and e['target'] == 'tool_claude_code'
-]
-print(running_on_claude)
-```
+| Metric | Count |
+|--------|-------|
+| **Tools** | 19 |
+| **Methodologies** | 8 |
+| **Categories** | 8 |
+| **Relationships** | 45+ |
+| **Last Updated** | 2025-01-18 |
+| **Tier Levels** | 5 (core to reference) |
 
 ---
 
-## Key Insights from the Graph
+## Entity Relationships
 
-1. **Claude Code is the central hub** — 10+ tools either reference, extend, or run on top of it
-2. **Carter Perez is the top curator** — shared 10 different Claude Code ecosystem resources
-3. **Multi-agent orchestration is emerging** — Ruflo (30K+ stars) and Paperclip represent the next wave
-4. **The community is creator-driven** — every tool/resource traces back to a specific person
-5. **Cross-category connections exist** — Claude Code tools feed into orchestration, which feeds into automation
+### Most Connected Tools
+
+1. **Claude Code** (10+ connections)
+   - Core to: Ruflo, GSD, VoltAgent, Talc AI
+   - Implements: Plan Mode, Subagent Delegation
+   - Extended by: Everything Claude Code, Awesome Claude Code
+
+2. **GSD** (8+ connections)
+   - Orchestrates: Claude Code, multiple methodologies
+   - Uses: Plan Mode, Subagent Delegation, MCP Integration
+   - Integrates with: Ruflo, VoltAgent
+
+3. **Plan Mode** (6+ connections)
+   - Core feature of: Claude Code
+   - Used by: GSD, Learn Claude Code
+   - Enables: Subagent Delegation
 
 ---
 
-## Knowledge Graph Diagram
+## How This Was Created
 
-```mermaid
-graph TD
-    claude((Claude Code))
+This knowledge graph was compiled from:
 
-    claude --> everything[Everything Claude Code]
-    claude --> awesome[Awesome Claude Code]
-    claude --> guide[Claude Code Ultimate Guide]
-    claude --> gsd[Get Shit Done]
-    claude --> subagents[100+ Subagents]
-    claude --> templates[Claude Code Templates]
-    claude --> skills[Claude Skills]
-    claude --> toolkit[Claude Toolkit]
-    claude --> learn[Learn Claude Code]
-    claude --> ruflo[Ruflo / Claude Flow]
-    claude --> paperclip[Paperclip]
+1. **Direct Tool Analysis**
+   - GitHub repositories and documentation
+   - Official tool features and capabilities
+   - Version information and maturity levels
 
-    subagents -.-> voltagent[VoltAgent]
-    ruflo --> reuven((Reuven Cohen))
-    claude --> anthro((Anthropic))
+2. **Architectural Analysis**
+   - How tools integrate and complement each other
+   - Pattern implementations
+   - Ecosystem relationships
 
-    style claude fill:#e53e3e,color:#fff,stroke:#333,stroke-width:3px
-    style subagents fill:#ed8936,color:#fff
-    style ruflo fill:#805ad5,color:#fff
-    style paperclip fill:#38b2ac,color:#fff
+3. **Community Patterns**
+   - Best practices from tool creators
+   - Common usage patterns
+   - Recommended configurations
+
+**All data is tool and methodology-focused** with no personal information, Instagram accounts, or people references.
+
+---
+
+## Getting Started
+
+### Quick Discovery
+```markdown
+# I need to orchestrate a complex workflow
+→ Use: GSD + Plan Mode + Subagent Delegation
+
+# I need to automate tasks
+→ Use: Ruflo + Claude Code
+
+# I need to debug agent behavior  
+→ Use: Talc AI + TDD patterns
+
+# I need external tool integration
+→ Use: MCP Integration (Awesome Claude Toolkit)
 ```
 
+### Learning Path
+
+1. **Beginner**: Claude Code basics, simple scripts
+2. **Intermediate**: Plan Mode, Context Management, Hooks
+3. **Advanced**: Subagent Delegation, Orchestration
+4. **Expert**: MCP Integration, Custom Frameworks
+
 ---
 
-## Related Repositories
+## Contributing
 
-| Repo | Author | Description |
-|------|--------|-------------|
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Anthropic | Official Claude Code |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Reuven Cohen | Multi-agent orchestration |
-| [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | Paperclip AI | Agent company orchestration |
-| [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | VoltAgent | 100+ Claude subagents |
+To maintain and update this knowledge graph:
+
+1. Read [MAINTENANCE.md](MAINTENANCE.md) for procedures
+2. Follow the data structure guidelines
+3. Validate JSON before committing
+4. Add relationships when discovering new connections
+5. Update tool information quarterly
 
 ---
 
 ## License
 
-MIT License — feel free to use, extend, and share.
+This knowledge graph is maintained as a reference resource for the AI tools community.
 
 ---
 
-*Generated from Instagram DMs on 2026-05-02*
-*Repository: github.com/ricksclick/ai-tools-knowledge-graph*
+## Related Resources
+
+- [INDEX.md](INDEX.md) - Quick reference guide
+- [MAINTENANCE.md](MAINTENANCE.md) - Repository maintenance procedures
+- [data/knowledge-graph.json](data/knowledge-graph.json) - Complete dataset
+- [Claude Code Official](https://github.com/anthropics/claude-code)
+
+---
+
+**Last Updated:** 2025-01-18  
+**Focus:** AI Tools, Methodologies & Patterns (Tool-Only Knowledge Graph)  
+**Maintained for:** AI Agents & Developers  
+
+🚀 **Start exploring:** [INDEX.md](INDEX.md)
